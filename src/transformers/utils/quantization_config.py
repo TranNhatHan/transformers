@@ -1715,7 +1715,7 @@ class QuarkConfig(QuantizationConfigMixin):
             self.quant_config = QuantConfigParser.from_custom_config(kwargs, is_bias_quantized=False)
             self.json_export_config = JsonExporterConfig()
         else:
-            self.quant_config = Config.from_dict(kwargs)
+            self.quant_config = QConfig.from_dict(kwargs)
 
             if "export" in kwargs:
                 # TODO: Remove this check once configuration version is handled natively by Quark.
