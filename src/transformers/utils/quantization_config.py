@@ -1701,7 +1701,7 @@ class QuarkConfig(QuantizationConfigMixin):
             from quark import __version__ as quark_version
             from quark.torch.export.config.config import JsonExporterConfig
             from quark.torch.export.main_export.quant_config_parser import QuantConfigParser
-            from quark.torch.quantization.config.config import Config
+            from quark.torch.quantization.config.config import QConfig
         else:
             raise ImportError(
                 "Quark is not installed. Please refer to https://quark.docs.amd.com/latest/install.html."
